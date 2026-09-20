@@ -2,19 +2,22 @@ package com.toptal.api;
 
 import org.testng.annotations.Test;
 
+import com.toptal.api.base.BaseTest;
+import com.toptal.api.constants.Endpoints;
+
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
-public class UserApiTest {
+public class UserApiTest extends BaseTest {
 
     @Test
     public void getUserTest() {
 
-        given()
-            .baseUri("https://jsonplaceholder.typicode.com")
+        given(requestSpec)
+            .pathParam("id", 1)
 
         .when()
-            .get("/users/1")
+            .get(Endpoints.USER_BY_ID)
 
         .then()
             .statusCode(200)
