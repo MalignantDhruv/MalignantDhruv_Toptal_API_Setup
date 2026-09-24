@@ -21,6 +21,10 @@ public class UserApiTest extends BaseTest {
 
         .then()
             .statusCode(200)
-            .body("id", equalTo(1));
+            .body("id", equalTo("1"))
+            .body("name", equalTo("Dhruv Mehta"))
+            .body("email", equalTo("dhruv.mehta@example.com"))
+            .body("gender", equalTo("Male"))
+            .body("status", equalTo("Active"));
     }
 }

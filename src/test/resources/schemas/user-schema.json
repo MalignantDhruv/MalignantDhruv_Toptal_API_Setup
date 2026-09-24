@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+
+  "required": [
+    "id",
+    "name",
+    "email",
+    "gender",
+    "status"
+  ],
+
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+
+    "name": {
+      "type": "string"
+    },
+
+    "email": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$"
+    },
+
+    "gender": {
+      "type": "string",
+      "enum": [
+        "Male",
+        "Female"
+      ]
+    },
+
+    "status": {
+      "type": "string",
+      "enum": [
+        "Active",
+        "Inactive"
+      ]
+    }
+  },
+
+  "additionalProperties": false
+}

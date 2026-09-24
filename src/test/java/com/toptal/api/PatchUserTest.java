@@ -15,12 +15,12 @@ public class PatchUserTest extends BaseTest {
 
         String requestBody = """
                 {
-                    "job": "QA Automation Engineer"
+                    "status": "Inactive"
                 }
                 """;
 
         given(requestSpec)
-            .pathParam("id", 1)
+            .pathParam("id", "1")
             .body(requestBody)
 
         .when()
@@ -28,6 +28,9 @@ public class PatchUserTest extends BaseTest {
 
         .then()
             .statusCode(200)
-            .body("job", equalTo("QA Automation Engineer"));
+            .body("id", equalTo("1"))
+            .body("status", equalTo("Inactive"))
+            .body("name", equalTo("Dhruv Mehta Updated"))
+            .body("email", equalTo("dhruv.updated@example.com"));
     }
 }

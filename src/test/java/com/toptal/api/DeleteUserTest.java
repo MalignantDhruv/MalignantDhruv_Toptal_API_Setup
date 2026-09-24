@@ -13,7 +13,7 @@ public class DeleteUserTest extends BaseTest {
     public void deleteUserTest() {
 
         given(requestSpec)
-            .pathParam("id", 1)
+            .pathParam("id", "10")
 
         .when()
             .delete(Endpoints.DELETE_USER)

@@ -15,8 +15,10 @@ public class CreateUserTest extends BaseTest {
 
         String requestBody = """
                 {
-                    "name": "Dhruv",
-                    "job": "QA Engineer"
+                    "name": "Arjun Mehta",
+                    "email": "arjun.mehta@example.com",
+                    "gender": "Male",
+                    "status": "Active"
                 }
                 """;
 
@@ -28,7 +30,10 @@ public class CreateUserTest extends BaseTest {
 
         .then()
             .statusCode(201)
-            .body("name", equalTo("Dhruv"))
-            .body("job", equalTo("QA Engineer"));
+            .body("name", equalTo("Arjun Mehta"))
+            .body("email", equalTo("arjun.mehta@example.com"))
+            .body("gender", equalTo("Male"))
+            .body("status", equalTo("Active"))
+            .body("id", notNullValue());
     }
 }

@@ -15,13 +15,15 @@ public class UpdateUserTest extends BaseTest {
 
         String requestBody = """
                 {
-                    "name": "Dhruv Updated",
-                    "job": "Senior QA Engineer"
+                    "name": "Dhruv Mehta Updated",
+                    "email": "dhruv.updated@example.com",
+                    "gender": "Male",
+                    "status": "Active"
                 }
                 """;
 
         given(requestSpec)
-            .pathParam("id", 1)
+            .pathParam("id", "1")
             .body(requestBody)
 
         .when()
@@ -29,7 +31,10 @@ public class UpdateUserTest extends BaseTest {
 
         .then()
             .statusCode(200)
-            .body("name", equalTo("Dhruv Updated"))
-            .body("job", equalTo("Senior QA Engineer"));
+            .body("id", equalTo("1"))
+            .body("name", equalTo("Dhruv Mehta Updated"))
+            .body("email", equalTo("dhruv.updated@example.com"))
+            .body("gender", equalTo("Male"))
+            .body("status", equalTo("Active"));
     }
 }

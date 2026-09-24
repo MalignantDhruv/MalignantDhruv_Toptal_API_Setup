@@ -17,17 +17,18 @@ public class ResponseExtractionTest extends BaseTest {
 
         Response response =
                 given(requestSpec)
+                .pathParam("id", "1")
 
                 .when()
-                    .get(Endpoints.USER_BY_ID.replace("{id}", "1"))
+                    .get(Endpoints.USER_BY_ID)
 
                 .then()
                     .statusCode(200)
                     .extract()
                     .response();
 
-        int userId = response.jsonPath().getInt("id");
+        String userId = response.jsonPath().getString("id");
 
-        assertEquals(userId, 1);
+        assertEquals(userId, "1");
     }
 }

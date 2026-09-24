@@ -10,21 +10,23 @@ import static io.restassured.RestAssured.*;
 public class InvalidCreateUserTest extends BaseTest {
 
     @Test
-    public void createUserWithoutNameTest() {
+    public void createUserWithInvalidJsonTest() {
 
-        String requestBody = """
+        String invalidRequestBody = """
                 {
-                    "job": "QA Engineer"
-                }
+                    "name": "Invalid User",
+                    "email": "invalid.user@example.com",
+                    "gender": "Male",
+                    "status": "Active"
                 """;
 
         given(requestSpec)
-            .body(requestBody)
+            .body(invalidRequestBody)
 
         .when()
             .post(Endpoints.CREATE_USER)
 
         .then()
-            .statusCode(201);
+            .statusCode(400);
     }
 }
