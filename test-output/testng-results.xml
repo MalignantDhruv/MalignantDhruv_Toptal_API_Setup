@@ -2,20 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-09-24T20:56:08 IST" name="Default suite" finished-at="2026-09-24T20:56:12 IST" duration-ms="3942">
+  <suite started-at="2026-09-27T21:38:35 IST" name="Default suite" finished-at="2026-09-27T21:38:38 IST" duration-ms="3568">
     <groups>
     </groups>
-    <test started-at="2026-09-24T20:56:08 IST" name="Default test" finished-at="2026-09-24T20:56:12 IST" duration-ms="3942">
-      <class name="com.toptal.api.UserSchemaValidationTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.toptal.api.UserSchemaValidationTest@702657cc]" started-at="2026-09-24T20:56:08 IST" name="setUp" finished-at="2026-09-24T20:56:09 IST" duration-ms="804" status="PASS">
+    <test started-at="2026-09-27T21:38:35 IST" name="Default test" finished-at="2026-09-27T21:38:38 IST" duration-ms="3568">
+      <class name="com.toptal.api.CreateUserTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.toptal.api.CreateUserTest@139982de]" started-at="2026-09-27T21:38:35 IST" name="setUp" finished-at="2026-09-27T21:38:35 IST" duration-ms="583" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateUserResponseSchemaTest()[pri:0, instance:com.toptal.api.UserSchemaValidationTest@702657cc]" started-at="2026-09-24T20:56:09 IST" name="validateUserResponseSchemaTest" finished-at="2026-09-24T20:56:12 IST" duration-ms="3088" status="PASS">
+        <test-method is-config="true" signature="initializeApiClient()[pri:0, instance:com.toptal.api.CreateUserTest@139982de]" started-at="2026-09-27T21:38:35 IST" name="initializeApiClient" finished-at="2026-09-27T21:38:35 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateUserResponseSchemaTest -->
-      </class> <!-- com.toptal.api.UserSchemaValidationTest -->
+        </test-method> <!-- initializeApiClient -->
+        <test-method signature="createUserTest()[pri:0, instance:com.toptal.api.CreateUserTest@139982de]" started-at="2026-09-27T21:38:35 IST" name="createUserTest" finished-at="2026-09-27T21:38:38 IST" duration-ms="2897" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserTest -->
+      </class> <!-- com.toptal.api.CreateUserTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
