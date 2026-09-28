@@ -1,0 +1,16 @@
+<suite name="API Regression Suite">
+
+    <test name="User API Tests">
+
+        <classes>
+
+            <class name="com.toptal.api.CreateUserTest"/>
+            <class name="com.toptal.api.DynamicUserWorkflowTest"/>
+            <class name="com.toptal.api.UserDataProviderTest"/>
+            <class name="com.toptal.api.UserSchemaValidationTest"/>
+
+        </classes>
+
+    </test>
+
+</suite>
