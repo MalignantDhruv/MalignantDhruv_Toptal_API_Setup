@@ -20,11 +20,10 @@ public class JsonArrayTest extends BaseTest {
 
         .then()
             .statusCode(200)
-            .body("size()", greaterThan(0))
-            .body("[0].id", notNullValue())
-            .body("[0].name", notNullValue())
-            .body("[0].email", notNullValue())
-            .body("[0].gender", notNullValue())
-            .body("[0].status", notNullValue());
+            .body("$", not(empty()))
+            .body("name", everyItem(notNullValue()))
+            .body("email", everyItem(notNullValue()))
+            .body("gender", everyItem(notNullValue()))
+            .body("status", everyItem(notNullValue()));
     }
 }

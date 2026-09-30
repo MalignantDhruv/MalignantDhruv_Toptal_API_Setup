@@ -1,185 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-09-28T21:05:11 IST" name="API Regression Suite" finished-at="2026-09-28T21:05:30 IST" duration-ms="18754">
+  <suite started-at="2026-09-30T20:47:11 IST" name="Default suite" finished-at="2026-09-30T20:47:18 IST" duration-ms="6818">
     <groups>
     </groups>
-    <test started-at="2026-09-28T21:05:11 IST" name="User API Tests" finished-at="2026-09-28T21:05:30 IST" duration-ms="18754">
-      <class name="com.toptal.api.CreateUserTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.toptal.api.CreateUserTest@6f03482]" started-at="2026-09-28T21:05:11 IST" name="setUp" finished-at="2026-09-28T21:05:12 IST" duration-ms="796" status="PASS">
+    <test started-at="2026-09-30T20:47:11 IST" name="Default test" finished-at="2026-09-30T20:47:18 IST" duration-ms="6818">
+      <class name="com.toptal.api.InterviewPracticeTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.toptal.api.InterviewPracticeTest@45752059]" started-at="2026-09-30T20:47:11 IST" name="setUp" finished-at="2026-09-30T20:47:12 IST" duration-ms="633" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="initializeApiClient()[pri:0, instance:com.toptal.api.CreateUserTest@6f03482]" started-at="2026-09-28T21:05:12 IST" name="initializeApiClient" finished-at="2026-09-28T21:05:12 IST" duration-ms="2" status="PASS">
+        <test-method signature="getusertest()[pri:0, instance:com.toptal.api.InterviewPracticeTest@45752059]" started-at="2026-09-30T20:47:12 IST" name="getusertest" finished-at="2026-09-30T20:47:18 IST" duration-ms="6138" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initializeApiClient -->
-        <test-method signature="createUserTest()[pri:0, instance:com.toptal.api.CreateUserTest@6f03482]" started-at="2026-09-28T21:05:12 IST" name="createUserTest" finished-at="2026-09-28T21:05:17 IST" duration-ms="5380" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createUserTest -->
-      </class> <!-- com.toptal.api.CreateUserTest -->
-      <class name="com.toptal.api.DynamicUserWorkflowTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.toptal.api.DynamicUserWorkflowTest@7eac9008]" started-at="2026-09-28T21:05:17 IST" name="setUp" finished-at="2026-09-28T21:05:17 IST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="initializeApiClient()[pri:0, instance:com.toptal.api.DynamicUserWorkflowTest@7eac9008]" started-at="2026-09-28T21:05:17 IST" name="initializeApiClient" finished-at="2026-09-28T21:05:17 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeApiClient -->
-        <test-method signature="completeUserWorkflowTest()[pri:0, instance:com.toptal.api.DynamicUserWorkflowTest@7eac9008]" started-at="2026-09-28T21:05:17 IST" name="completeUserWorkflowTest" finished-at="2026-09-28T21:05:24 IST" duration-ms="6803" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- completeUserWorkflowTest -->
-      </class> <!-- com.toptal.api.DynamicUserWorkflowTest -->
-      <class name="com.toptal.api.UserDataProviderTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.toptal.api.UserDataProviderTest@4116aac9]" started-at="2026-09-28T21:05:24 IST" name="setUp" finished-at="2026-09-28T21:05:24 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyUserData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.toptal.api.UserDataProviderTest@4116aac9]" started-at="2026-09-28T21:05:24 IST" name="verifyUserData" data-provider="userData" finished-at="2026-09-28T21:05:25 IST" duration-ms="1004" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Dhruv Mehta]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[dhruv.mehta@example.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Male]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Active]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserData -->
-        <test-method signature="verifyUserData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.toptal.api.UserDataProviderTest@4116aac9]" started-at="2026-09-28T21:05:25 IST" name="verifyUserData" data-provider="userData" finished-at="2026-09-28T21:05:26 IST" duration-ms="943" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Rahul Sharma]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[rahul.sharma@example.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Male]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Active]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserData -->
-        <test-method signature="verifyUserData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.toptal.api.UserDataProviderTest@4116aac9]" started-at="2026-09-28T21:05:26 IST" name="verifyUserData" data-provider="userData" finished-at="2026-09-28T21:05:27 IST" duration-ms="816" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Priya Patel]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[priya.patel@example.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Female]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Active]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserData -->
-        <test-method signature="verifyUserData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.toptal.api.UserDataProviderTest@4116aac9]" started-at="2026-09-28T21:05:27 IST" name="verifyUserData" data-provider="userData" finished-at="2026-09-28T21:05:27 IST" duration-ms="769" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Amit Shah]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[amit.shah@example.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Male]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Inactive]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserData -->
-        <test-method signature="verifyUserData(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.toptal.api.UserDataProviderTest@4116aac9]" started-at="2026-09-28T21:05:27 IST" name="verifyUserData" data-provider="userData" finished-at="2026-09-28T21:05:28 IST" duration-ms="784" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Neha Patel]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[neha.patel@example.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Female]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Active]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserData -->
-      </class> <!-- com.toptal.api.UserDataProviderTest -->
-      <class name="com.toptal.api.UserSchemaValidationTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.toptal.api.UserSchemaValidationTest@62ddbd7e]" started-at="2026-09-28T21:05:28 IST" name="setUp" finished-at="2026-09-28T21:05:28 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="validateUserResponseSchemaTest()[pri:0, instance:com.toptal.api.UserSchemaValidationTest@62ddbd7e]" started-at="2026-09-28T21:05:28 IST" name="validateUserResponseSchemaTest" finished-at="2026-09-28T21:05:30 IST" duration-ms="1360" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserResponseSchemaTest -->
-      </class> <!-- com.toptal.api.UserSchemaValidationTest -->
-    </test> <!-- User API Tests -->
-  </suite> <!-- API Regression Suite -->
+        </test-method> <!-- getusertest -->
+      </class> <!-- com.toptal.api.InterviewPracticeTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
